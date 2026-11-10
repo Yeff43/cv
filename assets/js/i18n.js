@@ -48,7 +48,7 @@
 
       "about.title": "Sobre mí",
       "about.lead": "Desarrollador de aplicaciones multiplataforma con experiencia liderando equipos y construyendo apps nativas e híbridas de principio a fin.",
-      "about.role": "Desarrollador Android · Kotlin Multiplatform · Angular & Capacitor",
+      "about.role": "Desarrollador Mobile · Android · Kotlin Multiplatform · Angular & Capacitor",
       "about.intro": "Desde 2023 desarrollo aplicaciones Android nativas (Kotlin, Java, Jetpack Compose, KMP) e híbridas (Angular, Ionic, Capacitor) para clientes como BBVA, BNP Paribas, Volvo, EMT Valencia o la Generalitat Valenciana.",
       "about.location": "Ubicación:",
       "about.locationValue": "Benimamet, Valencia (España)",
@@ -109,7 +109,7 @@
       "resume.languages": "Idiomas",
       "resume.lang.es": "Español — nativo",
       "resume.lang.en": "Inglés — C1 (avanzado)",
-      "resume.download": "Descargar CV en PDF (inglés)",
+      "resume.download": "Descargar CV en PDF",
 
       "projects.title": "Proyectos",
       "projects.subtitle": "Una selección de las aplicaciones en las que he participado, desde la arquitectura hasta la publicación.",
@@ -163,7 +163,7 @@
 
       "about.title": "About",
       "about.lead": "Multiplatform application developer with experience leading teams and building native and hybrid apps end to end.",
-      "about.role": "Android Developer · Kotlin Multiplatform · Angular & Capacitor",
+      "about.role": "Mobile Developer · Android · Kotlin Multiplatform · Angular & Capacitor",
       "about.intro": "Since 2023 I have been building native Android apps (Kotlin, Java, Jetpack Compose, KMP) and hybrid apps (Angular, Ionic, Capacitor) for clients such as BBVA, BNP Paribas, Volvo, EMT Valencia and the Valencian Regional Government.",
       "about.location": "Location:",
       "about.locationValue": "Benimamet, Valencia (Spain)",
@@ -823,6 +823,9 @@
     bound.forEach((b) => {
       b.el.textContent = b.value[lang];
     });
+    document.querySelectorAll("[data-cv-pdf]").forEach((a) => {
+      a.href = "assets/docs/Yeffry-Rodriguez-CV-" + lang.toUpperCase() + ".pdf";
+    });
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       const active = btn.getAttribute("data-lang") === lang;
@@ -857,4 +860,6 @@
   document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
 
   window.CVLang = { set: setLang, get: () => document.documentElement.lang };
+  // Datos expuestos para generar el CV en PDF (cv-print.html)
+  window.CV_DATA = { DICT, EXPERIENCE, PROJECTS, CERTS };
 })();
