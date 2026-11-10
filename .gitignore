@@ -1,0 +1,14 @@
+# Restos de la plantilla iPortfolio que no se usan en el CV
+portfolio-details.html
+service-details.html
+starter-page.html
+Readme.txt
+forms/
+assets/scss/
+assets/img/hero-bg.jpg
+assets/img/my-profile-img.jpg
+assets/img/services.jpg
+assets/img/logo.png
+assets/img/portfolio/
+assets/img/testimonials/
+.DS_Store

@@ -1,0 +1,439 @@
+/*--------------------------------------------------------------
+# Personalizaciones del CV (sobre la plantilla iPortfolio)
+--------------------------------------------------------------*/
+
+/* ---------- Selector de idioma ---------- */
+.lang-switch {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9998;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 4px 18px rgba(4, 11, 20, 0.18);
+}
+
+.lang-switch button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: #4a5562;
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 10px 5px 6px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-switch button:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+}
+
+.lang-switch button.active {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.lang-switch button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.lang-switch .flag {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.lang-switch .flag svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* En móvil/tablet el botón de menú ocupa la esquina derecha */
+@media (max-width: 1199px) {
+  .lang-switch {
+    right: 65px;
+  }
+}
+
+@media (max-width: 400px) {
+  .lang-switch button span.code {
+    display: none;
+  }
+
+  .lang-switch button {
+    padding: 5px;
+  }
+}
+
+/* ---------- Hero ---------- */
+.hero .hero-quote {
+  margin-top: 18px;
+  font-style: italic;
+  font-size: 18px;
+  opacity: 0.85;
+  max-width: 640px;
+}
+
+.hero .hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background: color-mix(in srgb, var(--accent-color), black 12%);
+  border-color: color-mix(in srgb, var(--accent-color), black 12%);
+  color: #ffffff;
+}
+
+.btn-cv.btn-outline {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.hero .btn-cv.btn-outline {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-cv.btn-outline:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* ---------- About ---------- */
+.about .content ul li span a {
+  color: var(--default-color);
+}
+
+.about .content ul li span a:hover {
+  color: var(--accent-color);
+}
+
+.about .profile-photo {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(4, 11, 20, 0.12);
+}
+
+/* ---------- Stats ---------- */
+.stats .stats-item span.purecounter::after {
+  content: "+";
+}
+
+.stats .stats-item span.purecounter.no-plus::after {
+  content: "";
+}
+
+/* ---------- Skills ---------- */
+.skill-group {
+  background: var(--surface-color);
+  border-radius: 10px;
+  padding: 22px 24px;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(4, 11, 20, 0.06);
+}
+
+.skill-group h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-group h3 i {
+  color: var(--accent-color);
+  font-size: 22px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.3;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: color-mix(in srgb, var(--accent-color), black 35%);
+  font-weight: 500;
+}
+
+.chip-muted {
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+/* ---------- Resume ---------- */
+.resume .resume-item .resume-stack {
+  font-size: 14px;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--accent-color), black 25%);
+  margin-bottom: 8px;
+}
+
+.resume .resume-item p em {
+  font-weight: 600;
+}
+
+.resume .download-cv {
+  margin-top: 10px;
+}
+
+/* ---------- Projects ---------- */
+.portfolio .project-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 15px rgba(4, 11, 20, 0.07);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio .project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(4, 11, 20, 0.12);
+}
+
+.portfolio .project-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.portfolio .project-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.portfolio .project-head h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.portfolio .project-period {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.portfolio .project-desc {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.portfolio .project-bullets {
+  padding-left: 18px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  margin-bottom: 12px;
+}
+
+.portfolio .project-bullets li {
+  margin-bottom: 4px;
+}
+
+.portfolio .project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.portfolio .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.portfolio .project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ---------- Contact ---------- */
+.contact .info-item a {
+  color: var(--default-color);
+}
+
+.contact .info-item a:hover {
+  color: var(--accent-color);
+}
+
+.contact .cta-card {
+  background: var(--surface-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 36px;
+  height: 100%;
+  border-radius: 8px;
+  border-top: 3px solid var(--accent-color);
+}
+
+.contact .cta-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact .cta-card .cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Fondo del hero sin foto de stock */
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--accent-color), transparent 70%) 0, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(61, 220, 132, 0.18) 0, transparent 40%),
+    linear-gradient(135deg, #040b14 0%, #0b1d33 55%, #06121f 100%);
+}
+
+.hero:before {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 40px 40px;
+}
+
+.hero p span.hero-iam {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ---------- Certificaciones ---------- */
+.cert-card {
+  display: flex;
+  gap: 16px;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 15px rgba(4, 11, 20, 0.07);
+}
+
+.cert-card .cert-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 22px;
+}
+
+.cert-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cert-card .cert-meta {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.cert-card .cert-id {
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  word-break: break-all;
+  margin-bottom: 6px;
+}
+
+.cert-card .cert-link {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Proyectos sobre fondo blanco: tarjetas con borde suave */
+.portfolio .project-card {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+/* Subpuntos dentro de la experiencia */
+.resume .resume-item ul li.sub {
+  margin-left: 22px;
+  list-style-type: circle;
+  font-size: 15px;
+}
+
+/* Logos de marca (DolcePOS) */
+.portfolio .project-icon.has-logo {
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.portfolio .project-icon.has-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.resume .resume-item .company-logo {
+  height: 24px;
+  max-width: 190px;
+  object-fit: contain;
+  object-position: left center;
+  width: auto;
+  display: block;
+  margin: 4px 0 2px;
+}
