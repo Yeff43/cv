@@ -38,6 +38,7 @@
       "about.licenseValue": "B y A",
 
       "lang.label": "Idioma",
+      "photo.open": "Ver foto ampliada",
 
       "hero.iam": "Soy",
       "hero.typed": "Desarrollador Mobile,Desarrollador Android,Desarrollador Kotlin Multiplatform,Desarrollador Angular & Capacitor,Tech Lead,Fundador de DolcePOS",
@@ -152,6 +153,7 @@
       "about.licenseValue": "B and A",
 
       "lang.label": "Language",
+      "photo.open": "View larger photo",
 
       "hero.iam": "I'm a",
       "hero.typed": "Mobile Developer,Android Developer,Kotlin Multiplatform Developer,Angular & Capacitor Developer,Tech Lead,Founder of DolcePOS",
@@ -318,6 +320,7 @@
     },
     {
       name: "Fourvenues Access App",
+      logo: "assets/img/apps/fourvenues.png",
       icon: "bi-qr-code-scan",
       filters: ["android", "kmp"],
       period: { es: "2025 – 2026", en: "2025 – 2026" },
@@ -331,6 +334,7 @@
     },
     {
       name: "Fourvenues Totem App",
+      logo: "assets/img/apps/fourvenues.png",
       icon: "bi-display",
       filters: ["hybrid"],
       period: { es: "2025 – 2026", en: "2025 – 2026" },
@@ -343,6 +347,7 @@
     },
     {
       name: { es: "Librerías de hardware a medida (Fourvenues)", en: "Custom hardware libraries (Fourvenues)" },
+      logo: "assets/img/apps/fourvenues.png",
       icon: "bi-cpu",
       filters: ["android", "kmp", "hybrid"],
       period: { es: "2025 – 2026", en: "2025 – 2026" },
@@ -356,6 +361,7 @@
     },
     {
       name: "EMT Valencia",
+      logo: "assets/img/apps/emt.png",
       icon: "bi-bus-front",
       filters: ["android"],
       stack: "Android · Java",
@@ -368,6 +374,7 @@
     },
     {
       name: "RUDO App",
+      logo: "assets/img/apps/rudo.png",
       icon: "bi-calendar-check",
       filters: ["android"],
       period: { es: "07/2023 – 03/2024", en: "07/2023 – 03/2024" },
@@ -381,6 +388,7 @@
     },
     {
       name: "Lotería Castillo",
+      logo: "assets/img/apps/loteria.png",
       icon: "bi-ticket-perforated",
       filters: ["android"],
       period: { es: "07/2023 – 03/2024", en: "07/2023 – 03/2024" },
@@ -406,16 +414,27 @@
     },
     {
       name: "Hundred Burgers",
+      logo: "assets/img/apps/hundred.png",
       icon: "bi-bag",
       filters: ["android"],
       period: { es: "06/2023 – 08/2023", en: "06/2023 – 08/2023" },
       stack: "Android",
       desc: { es: "App para pedir a domicilio o para llevar y gestionar reservas en los restaurantes Hundred Burgers.", en: "App to order delivery or take-away and manage bookings at Hundred Burgers restaurants." },
       bullets: [
+        { es: "Mantenimiento y desarrollo de funcionalidades a medida.", en: "Maintenance and custom feature development." },
         { es: "Tests del flujo de pagos.", en: "Tests for the payment data flow." },
         { es: "Integración de la API v2 manteniendo compatibilidad con versiones anteriores, siguiendo principios SOLID.", en: "Integrated the v2 API while keeping backward compatibility, following SOLID principles." }
       ],
       links: [{ type: "play", url: "https://play.google.com/store/apps/details?id=es.rudo.hundred" }]
+    },
+    {
+      name: "Fitzgerald Company",
+      icon: "bi-building",
+      filters: [],
+      desc: { es: "App integral para la cadena de restaurantes: gestión de reservas, check-in diario de los locales y gestión de la operativa de los colaboradores del negocio.", en: "All-in-one app for the restaurant chain: booking management, daily restaurant check-in and management of the business's staff operations." },
+      bullets: [
+        { es: "Mantenimiento y desarrollo de funcionalidades a medida.", en: "Maintenance and custom feature development." }
+      ]
     },
     {
       name: "BBVA MyAccess",
@@ -431,6 +450,7 @@
     },
     {
       name: "Colevisa",
+      logo: "assets/img/apps/colevisa.png",
       icon: "bi-cup-hot",
       filters: ["hybrid"],
       period: { es: "03/2023 – 06/2023", en: "03/2023 – 06/2023" },
@@ -458,6 +478,7 @@
     },
     {
       name: "Eserman Industrial Logistics",
+      logo: "assets/img/apps/eserman.png",
       icon: "bi-box-seam",
       filters: ["hybrid"],
       stack: "Angular · Ionic",
@@ -466,15 +487,21 @@
     },
     {
       name: "Schooltivity",
+      logo: "assets/img/apps/schooltivity.png",
       icon: "bi-mortarboard",
       filters: ["hybrid"],
       stack: "Angular · Ionic",
       platforms: "Android · iOS · Web",
       desc: { es: "Sistema de gestión escolar con más de 20 «flavors»: una app propia para cada cliente.", en: "School management system with 20+ flavors: a dedicated app for each customer." },
-      links: [{ type: "web", url: "https://schooltivity.com/" }]
+      links: [
+        { type: "play", url: "https://play.google.com/store/apps/details?id=com.schooltivity.test" },
+        { type: "appstore", url: "https://apps.apple.com/es/app/schooltivity-familias/id1107546869" },
+        { type: "web", url: "https://schooltivity.com/" }
+      ]
     },
     {
       name: "Palaus (GVA)",
+      logo: "assets/img/apps/palaus.png",
       icon: "bi-bank",
       filters: ["hybrid"],
       stack: "Angular · Ionic · Cordova · Capacitor",
@@ -487,11 +514,13 @@
     },
     {
       name: "Salt (GVA)",
+      logo: "assets/img/apps/salt.png",
       icon: "bi-translate",
       filters: ["hybrid"],
       stack: "Angular · Ionic · Cordova",
       platforms: "Android · iOS",
-      desc: { es: "Traductor y diccionario de valenciano para móvil.", en: "Mobile translator and dictionary for the Valencian language." }
+      desc: { es: "Traductor y diccionario de valenciano para móvil.", en: "Mobile translator and dictionary for the Valencian language." },
+      links: [{ type: "appstore", url: "https://apps.apple.com/es/app/gva-salt-usu/id1355690538" }]
     },
     {
       name: "BNP Paribas Employees",
@@ -504,28 +533,32 @@
     },
     {
       name: "PadelGo",
+      logo: "assets/img/apps/padelgo.png",
       icon: "bi-dribbble",
       filters: ["hybrid"],
       stack: "Angular · Ionic · Cordova · Capacitor",
       platforms: "Android · iOS · Web",
       desc: { es: "Inscripciones y suscripciones a competiciones de pádel de la Federación de Pádel de la Comunidad Valenciana.", en: "Enrolments and subscriptions for padel competitions of the Valencian Padel Federation." },
-      links: [{ type: "web", url: "https://padelcv.com/padelgo-la-app-de-fpcv/" }]
+      links: [
+        { type: "appstore", url: "https://apps.apple.com/es/app/padelgo/id1459400433" },
+        { type: "web", url: "https://padelcv.com/padelgo-la-app-de-fpcv/" }
+      ]
     },
     {
       name: "HOOMVIP",
+      logo: "assets/img/apps/hoomvip.png",
       icon: "bi-house-door",
       filters: ["hybrid"],
       stack: "Angular · Ionic · Cordova · Capacitor",
       platforms: "Android · iOS · Web",
       desc: { es: "Gestión remota de alojamientos turísticos, con 4 versiones de marca blanca.", en: "Remote management of tourist accommodations, with 4 white-label clones." },
       links: [
-        { type: "play", url: "https://play.google.com/store/apps/details?id=com.hoomvip.app" },
-        { type: "appstore", url: "https://apps.apple.com/es/app/hoomvip/id1345341964" },
         { type: "web", url: "https://www.hoomvip.com/" }
       ]
     },
     {
       name: "Volvo Car Service",
+      logo: "assets/img/apps/volvo.png",
       icon: "bi-car-front",
       filters: ["hybrid"],
       stack: "Angular · Ionic · Cordova",
@@ -650,7 +683,7 @@
       }
 
       const meta = el("div", "project-meta");
-      meta.appendChild(el("span", "chip", p.stack));
+      if (p.stack) meta.appendChild(el("span", "chip", p.stack));
       if (p.platforms) meta.appendChild(el("span", "chip chip-muted", p.platforms));
       if (p.private) meta.appendChild(keyEl("span", "chip chip-muted", "projects.private"));
       card.appendChild(meta);
