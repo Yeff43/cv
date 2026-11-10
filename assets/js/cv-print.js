@@ -77,7 +77,7 @@
   /* ---------- Principal ---------- */
   const main = [];
   main.push(`<header class="head">
-    <h1>Yeffry L. Rodríguez P.</h1>
+    <h1>Yeffry L. Rodriguez P.</h1>
     <p class="role">${esc(d["about.role"])}</p>
     <p class="quote">${esc(d["hero.quote"])}</p>
     <p class="weblink">${L.web} <a href="https://yeff43.github.io/cv/${lang === "en" ? "?lang=en" : ""}">yeff43.github.io/cv</a></p>
@@ -126,5 +126,5 @@
 
   document.getElementById("main").innerHTML = main.join("");
   document.documentElement.lang = lang;
-  document.title = lang === "en" ? "Yeffry L. Rodríguez P. — CV" : "Yeffry L. Rodríguez P. — Currículum";
+  document.title = lang === "en" ? "Yeffry L. Rodriguez P. — CV" : "Yeffry L. Rodriguez P. — Currículum";
 })();

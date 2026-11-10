@@ -12,3 +12,6 @@ assets/img/logo.png
 assets/img/portfolio/
 assets/img/testimonials/
 .DS_Store
+
+# Perfiles temporales de Chrome al generar los PDF
+*.prof/

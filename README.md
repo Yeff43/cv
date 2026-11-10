@@ -1,6 +1,6 @@
-# CV — Yeffry L. Rodríguez P.
+# CV — Yeffry L. Rodriguez P.
 
-Currículum online bilingüe (español / inglés) de Yeffry L. Rodríguez P., desarrollador Mobile (Android, Kotlin Multiplatform, Angular & Capacitor).
+Currículum online bilingüe (español / inglés) de Yeffry L. Rodriguez P., desarrollador Mobile (Android, Kotlin Multiplatform, Angular & Capacitor).
 
 🌐 **https://yeff43.github.io/cv/** · English: https://yeff43.github.io/cv/?lang=en
 

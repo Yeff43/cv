@@ -20,8 +20,8 @@
    * ------------------------------------------------------------------ */
   const DICT = {
     es: {
-      "meta.title": "Yeffry L. Rodríguez P. | Desarrollador de Aplicaciones Multiplataforma",
-      "meta.description": "Currículum de Yeffry L. Rodríguez P., desarrollador Android, Kotlin Multiplatform y Angular/Capacitor en Valencia. Tech Lead y fundador de DolcePOS.",
+      "meta.title": "Yeffry L. Rodriguez P. | Desarrollador de Aplicaciones Multiplataforma",
+      "meta.description": "Currículum de Yeffry L. Rodriguez P., desarrollador Android, Kotlin Multiplatform y Angular/Capacitor en Valencia. Tech Lead y fundador de DolcePOS.",
 
       "nav.home": "Inicio",
       "nav.about": "Sobre mí",
@@ -135,8 +135,8 @@
     },
 
     en: {
-      "meta.title": "Yeffry L. Rodríguez P. | Multiplatform Application Developer",
-      "meta.description": "Resume of Yeffry L. Rodríguez P., Android, Kotlin Multiplatform and Angular/Capacitor developer based in Valencia, Spain. Tech Lead and founder of DolcePOS.",
+      "meta.title": "Yeffry L. Rodriguez P. | Multiplatform Application Developer",
+      "meta.description": "Resume of Yeffry L. Rodriguez P., Android, Kotlin Multiplatform and Angular/Capacitor developer based in Valencia, Spain. Tech Lead and founder of DolcePOS.",
 
       "nav.home": "Home",
       "nav.about": "About",

@@ -334,18 +334,86 @@
   margin-top: 24px;
 }
 
-/* Fondo del hero sin foto de stock */
+/* Fondo del hero: mosaico de iconos de apps publicadas */
 .hero {
-  background:
-    radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--accent-color), transparent 70%) 0, transparent 45%),
-    radial-gradient(circle at 15% 85%, rgba(61, 220, 132, 0.18) 0, transparent 40%),
-    linear-gradient(135deg, #040b14 0%, #0b1d33 55%, #06121f 100%);
+  background: #060d18;
+  overflow: hidden;
 }
 
+.hero .hero-apps {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero .hero-apps .tilt {
+  position: absolute;
+  inset: -30% -20% -30% 28%;
+  transform: rotate(-14deg);
+  display: grid;
+  gap: 18px;
+  align-content: center;
+}
+
+.hero .hero-apps .row-apps {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  animation: hero-apps-slide 40s linear infinite;
+  will-change: transform;
+}
+
+.hero .hero-apps .row-apps:nth-child(even) {
+  animation-direction: reverse;
+  animation-duration: 48s;
+}
+
+/* Anula la regla ".hero img" de la plantilla (imagen a pantalla completa) */
+.hero .hero-apps img {
+  position: static;
+  inset: auto;
+  z-index: auto;
+  flex: none;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 22%;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+@keyframes hero-apps-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Velo para que el texto se lea bien sobre los iconos */
 .hero:before {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 40px 40px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 40px 40px;
+    radial-gradient(circle at 85% 15%, rgba(20, 157, 221, 0.18) 0, transparent 45%),
+    linear-gradient(90deg, #060d18 0%, rgba(6, 13, 24, 0.95) 40%, rgba(6, 13, 24, 0.75) 55%, rgba(6, 13, 24, 0.3) 78%, rgba(6, 13, 24, 0.5) 100%);
+}
+
+@media (max-width: 767px) {
+  .hero .hero-apps .tilt {
+    inset: -30% -40% -30% -10%;
+  }
+
+  .hero .hero-apps img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .hero:before {
+    background: linear-gradient(90deg, rgba(6, 13, 24, 0.95) 0%, rgba(6, 13, 24, 0.85) 60%, rgba(6, 13, 24, 0.7) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-apps .row-apps {
+    animation: none;
+  }
 }
 
 .hero p span.hero-iam {
